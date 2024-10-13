@@ -47,3 +47,4 @@ def menu ():
 menu()
 
 #Ini message muncul jika sukses push via terminal VSC dengan commit message " "
+#Pesan ini seharusnya muncul dengan commit message empty
