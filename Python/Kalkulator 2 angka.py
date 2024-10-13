@@ -45,3 +45,5 @@ def menu ():
             print("Menu tidak ada, silahkan pilih yang tertera")
             
 menu()
+
+#Ini message muncul jika sukses push via terminal VSC dengan commit message " "
