@@ -1,0 +1,24 @@
+import webbrowser
+
+USERNAME = "Admin"
+PASSWORD = "12345"
+MAX_ATTEMPTS = 3
+
+def login():
+    attempts = MAX_ATTEMPTS
+    while attempts > 0:
+        input_username = input("Enter username: ")
+        input_password = input("Enter password: ")
+        
+        if input_username == USERNAME and input_password == PASSWORD:
+            print("Login successful!")
+            return
+        else:
+            attempts -= 1
+            print(f"Incorrect login. You have {attempts} attempts left.")
+    
+    if attempts == 0:
+        print("No attempts left. Redirecting...")
+        webbrowser.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+
+login()
